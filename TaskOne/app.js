@@ -33,7 +33,7 @@ const server = http.createServer(function(request,response){
             break;
         case '/todos':
             fileData = fs.readFileSync('data.json');
-            response.writeHead(200,{"Content-Type": "text/html"});
+            response.writeHead(200,{"Content-Type": "application/json"});
             break;
         case '/todApp':
             fileData = fs.readFileSync('./views/todApp.html');
